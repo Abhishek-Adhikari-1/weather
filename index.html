@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App || Abhishek</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Weather App</h1>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Enter a city" />
+                <button id="search-button" onclick="sendcity()">Search</button>
+            </div>
+            <div class="locate">
+                <button id="locate" onclick="locate()">Locate</button>
+                OR allow auto locate
+            </div>
+            <div class="weather-container">
+                <div class="details-container">
+                    <ul>
+                        <li>Location: <span id="location"></span></li>
+                        <li>Temperature: <span id="temperature"></span></li>
+                        <li>Condition: <span id="condition"></span></li>
+                        <li>Humidity: <span id="humidity"></span></li>
+                        <li>Wind: <span id="wind"></span></li>
+                        <li>Pressure: <span id="pressure"></span></li>
+                        <li>Visibility: <span id="visibility"></span></li>
+                    </ul>
+                    <img src="" alt="" id="weather-icon" />
+					<figcaption>© Abhishek, All rights reserved.</figcaption>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <a
+                style="--color: #f2003c"
+                class="social-media"
+                href="https://www.instagram.com/unknown_account835/">
+                <span>Youtube</span>
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a style="--color: #0000ff" class="social-media" href="https://www.facebook.com/profile.php?id=100063712182245">
+                <span>Facebook</span>
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a style="--color: #00ff00" class="social-media" href="https://wa.me/+9779811343299">
+                <span>Whatsapp</span>
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
