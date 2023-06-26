@@ -41,6 +41,12 @@ function fetchdata(city) {
 
 function sendcity(e) {
     var city = document.getElementById("search-bar").value.trim();
+document.getElementById("search-bar").addEventListener("keydown", function (event) {
+	if (event.key === "Enter") {
+		fetchdata(city);
+	}
+
+}
     if (city != "") {
         fetchdata(city);
     } else {
